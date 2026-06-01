@@ -38,29 +38,29 @@
 // #include "mixr/base/network/UdpMulticastHandler.hpp"
 // #include "mixr/base/network/UdpUnicastHandler.hpp"
 
-// // Colors
-// #include "mixr/base/colors/Cie.hpp"
-// #include "mixr/base/colors/Cmy.hpp"
-// #include "mixr/base/colors/Hls.hpp"
-// #include "mixr/base/colors/Hsv.hpp"
-// #include "mixr/base/colors/Hsva.hpp"
-// #include "mixr/base/colors/Rgb.hpp"
-// #include "mixr/base/colors/Rgba.hpp"
-// #include "mixr/base/colors/Yiq.hpp"
+// Colors
+#include "mixr/base/colors/Cie.hpp"
+#include "mixr/base/colors/Cmy.hpp"
+#include "mixr/base/colors/Hls.hpp"
+#include "mixr/base/colors/Hsv.hpp"
+#include "mixr/base/colors/Hsva.hpp"
+#include "mixr/base/colors/Rgb.hpp"
+#include "mixr/base/colors/Rgba.hpp"
+#include "mixr/base/colors/Yiq.hpp"
 
 // // Units
-// #include "mixr/base/units/AngularVelocity.hpp"
-// #include "mixr/base/units/Angles.hpp"
-// #include "mixr/base/units/Areas.hpp"
-// #include "mixr/base/units/Decibel.hpp"
-// #include "mixr/base/units/Distances.hpp"
-// #include "mixr/base/units/Energies.hpp"
-// #include "mixr/base/units/Forces.hpp"
-// #include "mixr/base/units/Frequencies.hpp"
-// #include "mixr/base/units/LinearVelocity.hpp"
-// #include "mixr/base/units/Masses.hpp"
-// #include "mixr/base/units/Powers.hpp"
-// #include "mixr/base/units/Times.hpp"
+#include "mixr/base/units/AngularVelocity.hpp"
+#include "mixr/base/units/Angles.hpp"
+#include "mixr/base/units/Areas.hpp"
+#include "mixr/base/units/Decibel.hpp"
+#include "mixr/base/units/Distances.hpp"
+#include "mixr/base/units/Energies.hpp"
+#include "mixr/base/units/Forces.hpp"
+#include "mixr/base/units/Frequencies.hpp"
+#include "mixr/base/units/LinearVelocity.hpp"
+#include "mixr/base/units/Masses.hpp"
+#include "mixr/base/units/Powers.hpp"
+#include "mixr/base/units/Times.hpp"
 
 // // Others
 // #include "mixr/base/EarthModel.hpp"
@@ -215,34 +215,34 @@ Object* factory(const std::string& name)
     //     obj = new DecibelSquareMeters();
     // }
 
-    // // Units: Distances
-    // else if ( name == Meters::getFactoryName() ) {
-    //     obj = new Meters();
-    // }
-    // else if ( name == CentiMeters::getFactoryName() ) {
-    //     obj = new CentiMeters();
-    // }
-    // else if ( name == MicroMeters::getFactoryName() ) {
-    //     obj = new MicroMeters();
-    // }
-    // else if ( name == Microns::getFactoryName() ) {
-    //     obj = new Microns();
-    // }
-    // else if ( name == KiloMeters::getFactoryName() ) {
-    //     obj = new KiloMeters();
-    // }
-    // else if ( name == Inches::getFactoryName() ) {
-    //     obj = new Inches();
-    // }
-    // else if ( name == Feet::getFactoryName() ) {
-    //     obj = new Feet();
-    // }
-    // else if ( name == NauticalMiles::getFactoryName() ) {
-    //     obj = new NauticalMiles();
-    // }
-    // else if ( name == StatuteMiles::getFactoryName() ) {
-    //     obj = new StatuteMiles();
-    // }
+    // Units: Distances
+    else if ( name == Meters::getFactoryName() ) {
+        obj = new Meters();
+    }
+    else if ( name == CentiMeters::getFactoryName() ) {
+        obj = new CentiMeters();
+    }
+    else if ( name == MicroMeters::getFactoryName() ) {
+        obj = new MicroMeters();
+    }
+    else if ( name == Microns::getFactoryName() ) {
+        obj = new Microns();
+    }
+    else if ( name == KiloMeters::getFactoryName() ) {
+        obj = new KiloMeters();
+    }
+    else if ( name == Inches::getFactoryName() ) {
+        obj = new Inches();
+    }
+    else if ( name == Feet::getFactoryName() ) {
+        obj = new Feet();
+    }
+    else if ( name == NauticalMiles::getFactoryName() ) {
+        obj = new NauticalMiles();
+    }
+    else if ( name == StatuteMiles::getFactoryName() ) {
+        obj = new StatuteMiles();
+    }
 
     // // Units: Energies
     // else if ( name == KiloWattHours::getFactoryName() ) {
@@ -323,28 +323,28 @@ Object* factory(const std::string& name)
     //     obj = new DecibelMilliWatts();
     // }
 
-    // // Units: Time
-    // else if ( name == Seconds::getFactoryName() ) {
-    //     obj = new Seconds();
-    // }
-    // else if ( name == MilliSeconds::getFactoryName() ) {
-    //     obj = new MilliSeconds();
-    // }
-    // else if ( name == MicroSeconds::getFactoryName() ) {
-    //     obj = new MicroSeconds();
-    // }
-    // else if ( name == NanoSeconds::getFactoryName() ) {
-    //     obj = new NanoSeconds();
-    // }
-    // else if ( name == Minutes::getFactoryName() ) {
-    //     obj = new Minutes();
-    // }
-    // else if ( name == Hours::getFactoryName() ) {
-    //     obj = new Hours();
-    // }
-    // else if ( name == Days::getFactoryName() ) {
-    //     obj = new Days();
-    // }
+    // Units: Time
+    else if ( name == Seconds::getFactoryName() ) {
+        obj = new Seconds();
+    }
+    else if ( name == MilliSeconds::getFactoryName() ) {
+        obj = new MilliSeconds();
+    }
+    else if ( name == MicroSeconds::getFactoryName() ) {
+        obj = new MicroSeconds();
+    }
+    else if ( name == NanoSeconds::getFactoryName() ) {
+        obj = new NanoSeconds();
+    }
+    else if ( name == Minutes::getFactoryName() ) {
+        obj = new Minutes();
+    }
+    else if ( name == Hours::getFactoryName() ) {
+        obj = new Hours();
+    }
+    else if ( name == Days::getFactoryName() ) {
+        obj = new Days();
+    }
 
     // // Units: Velocities
     // else if ( name == AngularVelocity::getFactoryName() ) {
@@ -354,34 +354,34 @@ Object* factory(const std::string& name)
     //     obj = new LinearVelocity();
     // }
 
-    // // Colors
-    // else if ( name == Color::getFactoryName() ) {
-    //     obj = new Color();
-    // }
-    // else if ( name == Cie::getFactoryName() ) {
-    //     obj = new Cie();
-    // }
-    // else if ( name == Cmy::getFactoryName() ) {
-    //     obj = new Cmy();
-    // }
-    // else if ( name == Hls::getFactoryName() ) {
-    //     obj = new Hls();
-    // }
-    // else if ( name == Hsv::getFactoryName() ) {
-    //     obj = new Hsv();
-    // }
-    // else if ( name == Hsva::getFactoryName() ) {
-    //     obj = new Hsva();
-    // }
-    // else if ( name == Rgb::getFactoryName() ) {
-    //     obj = new Rgb();
-    // }
-    // else if ( name == Rgba::getFactoryName() ) {
-    //     obj = new Rgba();
-    // }
-    // else if ( name == Yiq::getFactoryName() ) {
-    //     obj = new Yiq();
-    // }
+    // Colors
+    else if ( name == Color::getFactoryName() ) {
+        obj = new Color();
+    }
+    else if ( name == Cie::getFactoryName() ) {
+        obj = new Cie();
+    }
+    else if ( name == Cmy::getFactoryName() ) {
+        obj = new Cmy();
+    }
+    else if ( name == Hls::getFactoryName() ) {
+        obj = new Hls();
+    }
+    else if ( name == Hsv::getFactoryName() ) {
+        obj = new Hsv();
+    }
+    else if ( name == Hsva::getFactoryName() ) {
+        obj = new Hsva();
+    }
+    else if ( name == Rgb::getFactoryName() ) {
+        obj = new Rgb();
+    }
+    else if ( name == Rgba::getFactoryName() ) {
+        obj = new Rgba();
+    }
+    else if ( name == Yiq::getFactoryName() ) {
+        obj = new Yiq();
+    }
 
     // // Network handlers
     // else if ( name == TcpClient::getFactoryName() ) {
