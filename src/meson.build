@@ -4,7 +4,7 @@ subdir('./base')
 # subdir('./linearsystem')
 # subdir('./linkage')
 
-# subdir('./simulation')
+subdir('./simulation')
 # subdir('./models')
 # subdir('./interop')
 
