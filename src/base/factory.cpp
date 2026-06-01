@@ -4,23 +4,23 @@
 #include "mixr/base/Object.hpp"
 
 // #include "mixr/base/FileReader.hpp"
-// #include "mixr/base/Statistic.hpp"
+#include "mixr/base/Statistic.hpp"
 // #include "mixr/base/Transforms.hpp"
-// #include "mixr/base/Timers.hpp"
+#include "mixr/base/Timers.hpp"
 // #include "mixr/base/LatLon.hpp"
 
-// // Functors
-// #include "mixr/base/functors/Func1.hpp"
-// #include "mixr/base/functors/Func2.hpp"
-// #include "mixr/base/functors/Func3.hpp"
-// #include "mixr/base/functors/Func4.hpp"
-// #include "mixr/base/functors/Func5.hpp"
-// #include "mixr/base/functors/Polynomial.hpp"
-// #include "mixr/base/functors/Table1.hpp"
-// #include "mixr/base/functors/Table2.hpp"
-// #include "mixr/base/functors/Table3.hpp"
-// #include "mixr/base/functors/Table4.hpp"
-// #include "mixr/base/functors/Table5.hpp"
+// Functors
+#include "mixr/base/functors/Func1.hpp"
+#include "mixr/base/functors/Func2.hpp"
+#include "mixr/base/functors/Func3.hpp"
+#include "mixr/base/functors/Func4.hpp"
+#include "mixr/base/functors/Func5.hpp"
+#include "mixr/base/functors/Polynomial.hpp"
+#include "mixr/base/functors/Table1.hpp"
+#include "mixr/base/functors/Table2.hpp"
+#include "mixr/base/functors/Table3.hpp"
+#include "mixr/base/functors/Table4.hpp"
+#include "mixr/base/functors/Table5.hpp"
 
 // Numbers
 #include "mixr/base/numeric/Boolean.hpp"
@@ -94,24 +94,24 @@ Object* factory(const std::string& name)
     else if ( name == Boolean::getFactoryName() ) {
         obj = new Boolean();
     }
-    // else if ( name == Decibel::getFactoryName() ) {
-    //     obj = new Decibel();
-    // }
+    else if ( name == Decibel::getFactoryName() ) {
+        obj = new Decibel();
+    }
     // else if ( name == LatLon::getFactoryName() ) {
     //     obj = new LatLon();
     // }
-    // else if ( name == Add::getFactoryName() ) {
-    //     obj = new Add();
-    // }
-    // else if ( name == Subtract::getFactoryName() ) {
-    //     obj = new Subtract();
-    // }
-    // else if ( name == Multiply::getFactoryName() ) {
-    //     obj = new Multiply();
-    // }
-    // else if ( name == Divide::getFactoryName() ) {
-    //     obj = new Divide();
-    // }
+    else if ( name == Add::getFactoryName() ) {
+        obj = new Add();
+    }
+    else if ( name == Subtract::getFactoryName() ) {
+        obj = new Subtract();
+    }
+    else if ( name == Multiply::getFactoryName() ) {
+        obj = new Multiply();
+    }
+    else if ( name == Divide::getFactoryName() ) {
+        obj = new Divide();
+    }
 
     // // Components
     // else if ( name == FileReader::getFactoryName() ) {
@@ -132,88 +132,88 @@ Object* factory(const std::string& name)
     //     obj = new Scale();
     // }
 
-    // // Functors
-    // else if ( name == Func1::getFactoryName() ) {
-    //     obj = new Func1();
-    // }
-    // else if ( name == Func2::getFactoryName() ) {
-    //     obj = new Func2();
-    // }
-    // else if ( name == Func3::getFactoryName() ) {
-    //     obj = new Func3();
-    // }
-    // else if ( name == Func4::getFactoryName() ) {
-    //     obj = new Func4();
-    // }
-    // else if ( name == Func5::getFactoryName() ) {
-    //     obj = new Func5();
-    // }
-    // else if ( name == Polynomial::getFactoryName() ) {
-    //     obj = new Polynomial();
-    // }
-    // else if ( name == Table1::getFactoryName() ) {
-    //     obj = new Table1();
-    // }
-    // else if ( name == Table2::getFactoryName() ) {
-    //     obj = new Table2();
-    // }
-    // else if ( name == Table3::getFactoryName() ) {
-    //     obj = new Table3();
-    // }
-    // else if ( name == Table4::getFactoryName() ) {
-    //     obj = new Table4();
-    // }
-    // else if ( name == Table5::getFactoryName() ) {
-    //     obj = new Table5();
-    // }
+    // Functors
+    else if ( name == Func1::getFactoryName() ) {
+        obj = new Func1();
+    }
+    else if ( name == Func2::getFactoryName() ) {
+        obj = new Func2();
+    }
+    else if ( name == Func3::getFactoryName() ) {
+        obj = new Func3();
+    }
+    else if ( name == Func4::getFactoryName() ) {
+        obj = new Func4();
+    }
+    else if ( name == Func5::getFactoryName() ) {
+        obj = new Func5();
+    }
+    else if ( name == Polynomial::getFactoryName() ) {
+        obj = new Polynomial();
+    }
+    else if ( name == Table1::getFactoryName() ) {
+        obj = new Table1();
+    }
+    else if ( name == Table2::getFactoryName() ) {
+        obj = new Table2();
+    }
+    else if ( name == Table3::getFactoryName() ) {
+        obj = new Table3();
+    }
+    else if ( name == Table4::getFactoryName() ) {
+        obj = new Table4();
+    }
+    else if ( name == Table5::getFactoryName() ) {
+        obj = new Table5();
+    }
 
-    // // Timers
-    // else if ( name == UpTimer::getFactoryName() ) {
-    //     obj = new UpTimer();
-    // }
-    // else if ( name == DownTimer::getFactoryName() ) {
-    //     obj = new DownTimer();
-    // }
+    // Timers
+    else if ( name == UpTimer::getFactoryName() ) {
+        obj = new UpTimer();
+    }
+    else if ( name == DownTimer::getFactoryName() ) {
+        obj = new DownTimer();
+    }
 
-    // // Units: Angles
-    // else if ( name == Degrees::getFactoryName() ) {
-    //     obj = new Degrees();
-    // }
-    // else if ( name == Radians::getFactoryName() ) {
-    //     obj = new Radians();
-    // }
-    // else if ( name == Semicircles::getFactoryName() ) {
-    //     obj = new Semicircles();
-    // }
+    // Units: Angles
+    else if ( name == Degrees::getFactoryName() ) {
+        obj = new Degrees();
+    }
+    else if ( name == Radians::getFactoryName() ) {
+        obj = new Radians();
+    }
+    else if ( name == Semicircles::getFactoryName() ) {
+        obj = new Semicircles();
+    }
 
-    // // Units: Areas
-    // else if ( name == SquareMeters::getFactoryName() ) {
-    //     obj = new SquareMeters();
-    // }
-    // else if ( name == SquareFeet::getFactoryName() ) {
-    //     obj = new SquareFeet();
-    // }
-    // else if ( name == SquareInches::getFactoryName() ) {
-    //     obj = new SquareInches();
-    // }
-    // else if ( name == SquareYards::getFactoryName() ) {
-    //     obj = new SquareYards();
-    // }
-    // else if ( name == SquareMiles::getFactoryName() ) {
-    //     obj = new SquareMiles();
-    // }
-    // else if ( name == SquareCentiMeters::getFactoryName() ) {
-    //     obj = new SquareCentiMeters();
-    // }
-    // else if ( name == SquareMilliMeters::getFactoryName() ) {
-    //     obj = new SquareMilliMeters();
-    // }
-    // else if ( name == SquareKiloMeters::getFactoryName() ) {
-    //     obj = new SquareKiloMeters();
-    // }
-    // else if ( name == DecibelSquareMeters::getFactoryName() ) {
-    //     obj = new DecibelSquareMeters();
-    // }
+    // Units: Areas
+    else if ( name == SquareMeters::getFactoryName() ) {
+        obj = new SquareMeters();
+    }
+    else if ( name == SquareFeet::getFactoryName() ) {
+        obj = new SquareFeet();
+    }
+    else if ( name == SquareInches::getFactoryName() ) {
+        obj = new SquareInches();
+    }
+    else if ( name == SquareYards::getFactoryName() ) {
+        obj = new SquareYards();
+    }
+    else if ( name == SquareMiles::getFactoryName() ) {
+        obj = new SquareMiles();
+    }
+    else if ( name == SquareCentiMeters::getFactoryName() ) {
+        obj = new SquareCentiMeters();
+    }
+    else if ( name == SquareMilliMeters::getFactoryName() ) {
+        obj = new SquareMilliMeters();
+    }
+    else if ( name == SquareKiloMeters::getFactoryName() ) {
+        obj = new SquareKiloMeters();
+    }
+    else if ( name == DecibelSquareMeters::getFactoryName() ) {
+        obj = new DecibelSquareMeters();
+    }
 
     // Units: Distances
     else if ( name == Meters::getFactoryName() ) {
@@ -244,84 +244,84 @@ Object* factory(const std::string& name)
         obj = new StatuteMiles();
     }
 
-    // // Units: Energies
-    // else if ( name == KiloWattHours::getFactoryName() ) {
-    //     obj = new KiloWattHours();
-    // }
-    // else if ( name == BTUs::getFactoryName() ) {
-    //     obj = new BTUs();
-    // }
-    // else if ( name == Calories::getFactoryName() ) {
-    //     obj = new Calories();
-    // }
-    // else if ( name == FootPounds::getFactoryName() ) {
-    //     obj = new FootPounds();
-    // }
-    // else if ( name == Joules::getFactoryName() ) {
-    //     obj = new Joules();
-    // }
+    // Units: Energies
+    else if ( name == KiloWattHours::getFactoryName() ) {
+        obj = new KiloWattHours();
+    }
+    else if ( name == BTUs::getFactoryName() ) {
+        obj = new BTUs();
+    }
+    else if ( name == Calories::getFactoryName() ) {
+        obj = new Calories();
+    }
+    else if ( name == FootPounds::getFactoryName() ) {
+        obj = new FootPounds();
+    }
+    else if ( name == Joules::getFactoryName() ) {
+        obj = new Joules();
+    }
 
-    // // Units: Forces
-    // else if ( name == Newtons::getFactoryName() ) {
-    //     obj = new Newtons();
-    // }
-    // else if ( name == KiloNewtons::getFactoryName() ) {
-    //     obj = new KiloNewtons();
-    // }
-    // else if ( name == Poundals::getFactoryName() ) {
-    //     obj = new Poundals();
-    // }
-    // else if ( name == PoundForces::getFactoryName() ) {
-    //     obj = new PoundForces();
-    // }
+    // Units: Forces
+    else if ( name == Newtons::getFactoryName() ) {
+        obj = new Newtons();
+    }
+    else if ( name == KiloNewtons::getFactoryName() ) {
+        obj = new KiloNewtons();
+    }
+    else if ( name == Poundals::getFactoryName() ) {
+        obj = new Poundals();
+    }
+    else if ( name == PoundForces::getFactoryName() ) {
+        obj = new PoundForces();
+    }
 
-    // // Units: Frequencies
-    // else if ( name == Hertz::getFactoryName() ) {
-    //     obj = new Hertz();
-    // }
-    // else if ( name == KiloHertz::getFactoryName() ) {
-    //     obj = new KiloHertz();
-    // }
-    // else if ( name == MegaHertz::getFactoryName() ) {
-    //     obj = new MegaHertz();
-    // }
-    // else if ( name == GigaHertz::getFactoryName() ) {
-    //     obj = new GigaHertz();
-    // }
-    // else if ( name == TeraHertz::getFactoryName() ) {
-    //     obj = new TeraHertz();
-    // }
+    // Units: Frequencies
+    else if ( name == Hertz::getFactoryName() ) {
+        obj = new Hertz();
+    }
+    else if ( name == KiloHertz::getFactoryName() ) {
+        obj = new KiloHertz();
+    }
+    else if ( name == MegaHertz::getFactoryName() ) {
+        obj = new MegaHertz();
+    }
+    else if ( name == GigaHertz::getFactoryName() ) {
+        obj = new GigaHertz();
+    }
+    else if ( name == TeraHertz::getFactoryName() ) {
+        obj = new TeraHertz();
+    }
 
-    // // Units: Masses
-    // else if ( name == Grams::getFactoryName() ) {
-    //     obj = new Grams();
-    // }
-    // else if ( name == KiloGrams::getFactoryName() ) {
-    //     obj = new KiloGrams();
-    // }
-    // else if ( name == Slugs::getFactoryName() ) {
-    //     obj = new Slugs();
-    // }
+    // Units: Masses
+    else if ( name == Grams::getFactoryName() ) {
+        obj = new Grams();
+    }
+    else if ( name == KiloGrams::getFactoryName() ) {
+        obj = new KiloGrams();
+    }
+    else if ( name == Slugs::getFactoryName() ) {
+        obj = new Slugs();
+    }
 
-    // // Units: Powers
-    // else if ( name == KiloWatts::getFactoryName() ) {
-    //     obj = new KiloWatts();
-    // }
-    // else if ( name == Watts::getFactoryName() ) {
-    //     obj = new Watts();
-    // }
-    // else if ( name == MilliWatts::getFactoryName() ) {
-    //     obj = new MilliWatts();
-    // }
-    // else if ( name == Horsepower::getFactoryName() ) {
-    //     obj = new Horsepower();
-    // }
-    // else if ( name == DecibelWatts::getFactoryName() ) {
-    //     obj = new DecibelWatts();
-    // }
-    // else if ( name == DecibelMilliWatts::getFactoryName() ) {
-    //     obj = new DecibelMilliWatts();
-    // }
+    // Units: Powers
+    else if ( name == KiloWatts::getFactoryName() ) {
+        obj = new KiloWatts();
+    }
+    else if ( name == Watts::getFactoryName() ) {
+        obj = new Watts();
+    }
+    else if ( name == MilliWatts::getFactoryName() ) {
+        obj = new MilliWatts();
+    }
+    else if ( name == Horsepower::getFactoryName() ) {
+        obj = new Horsepower();
+    }
+    else if ( name == DecibelWatts::getFactoryName() ) {
+        obj = new DecibelWatts();
+    }
+    else if ( name == DecibelMilliWatts::getFactoryName() ) {
+        obj = new DecibelMilliWatts();
+    }
 
     // Units: Time
     else if ( name == Seconds::getFactoryName() ) {
@@ -346,13 +346,13 @@ Object* factory(const std::string& name)
         obj = new Days();
     }
 
-    // // Units: Velocities
-    // else if ( name == AngularVelocity::getFactoryName() ) {
-    //     obj = new AngularVelocity();
-    // }
-    // else if ( name == LinearVelocity::getFactoryName() ) {
-    //     obj = new LinearVelocity();
-    // }
+    // Units: Velocities
+    else if ( name == AngularVelocity::getFactoryName() ) {
+        obj = new AngularVelocity();
+    }
+    else if ( name == LinearVelocity::getFactoryName() ) {
+        obj = new LinearVelocity();
+    }
 
     // Colors
     else if ( name == Color::getFactoryName() ) {
