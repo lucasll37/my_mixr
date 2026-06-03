@@ -57,10 +57,10 @@ pkg.generate(
         # mixr_interop_dis,
         # mixr_linearsystem,
         # mixr_linkage,
-        # mixr_models,
+        mixr_models,
         # mixr_recorder,
         mixr_simulation,
-        # mixr_terrain,
+        mixr_terrain,
     ],
     name : 'mixr',
 )

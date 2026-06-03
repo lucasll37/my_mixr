@@ -1,11 +1,11 @@
 subdir('./base')
 
-# subdir('./terrain')
+subdir('./terrain')
 # subdir('./linearsystem')
 # subdir('./linkage')
 
 subdir('./simulation')
-# subdir('./models')
+subdir('./models')
 # subdir('./interop')
 
 # subdir('./recorder')
