@@ -6,6 +6,6 @@ subdir('./linkage')
 
 subdir('./simulation')
 subdir('./models')
-# subdir('./interop')
+subdir('./interop')
 
 subdir('./recorder')

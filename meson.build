@@ -53,8 +53,8 @@ pkg.generate(
     filebase : 'mixr',
     libraries : [
         mixr_base,
-        # mixr_interop_common,
-        # mixr_interop_dis,
+        mixr_interop_common,
+        mixr_interop_dis,
         mixr_linearsystem,
         mixr_linkage,
         mixr_models,
