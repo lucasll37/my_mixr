@@ -44,6 +44,8 @@ public_headers = include_directories('include')
 
 subdir('./src')
 
+subdir('./mixr-examples')
+
 #
 # Installation
 #
